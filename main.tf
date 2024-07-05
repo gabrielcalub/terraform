@@ -1,4 +1,11 @@
 terraform {
+  cloud {
+    organization = "Gabe-Ram"
+    workspaces {
+      name = "GabeRam-Workspace"
+    }
+  }
+
   required_providers {
     aws = {
       source  = "hashicorp/aws"
